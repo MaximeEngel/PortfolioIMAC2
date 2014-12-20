@@ -1,0 +1,66 @@
+/************
+CORPS
+************/
+
+* {
+	box-sizing: border-box ;
+}
+
+html, body, .full-height {
+	height: 100%;
+}
+
+.bande
+{
+	padding: 5% ;
+	box-sizing: border-box ;
+	overflow: hidden ;
+}
+
+
+p {
+	font-family: @font-principal, sans-serif;	
+	text-indent: @font-size-p ;
+	text-align: justify ;
+	
+	@media @lg-media
+	{
+		font-size: @font-size-p ;
+	}
+	@media @md-media
+	{
+		font-size: @font-size-p * 0.9 ;
+	}
+	@media @s-media
+	{
+		font-size: @font-size-p * 0.8 ;
+	}
+	@media @xs-media
+	{
+		font-size: @font-size-p * 0.7 ;
+	}
+}
+
+/************
+TITRES
+************/
+
+/************
+Liens/Bouttons
+************/
+
+a {
+	text-decoration: none;
+
+	&.blancJaune {
+		.btnWithoutBorder(@blanc, @jaune) ;
+	}
+}
+
+.btn-noirBlanc {
+	.btn(@noir, @blanc) ;
+}
+
+.btn-blancNoir {
+	.btn(@blanc, @noir) ;
+}

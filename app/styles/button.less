@@ -1,0 +1,47 @@
+// bouton avec effet de remplissage au survol
+
+.btnWithoutBorder(@couleur, @couleur2) {
+	padding: 10px 0px;
+	margin: 0px 5px;
+	color: @couleur;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	
+	&:before {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;		
+		padding: 10px 0px;
+		width : 100%;
+		white-space: nowrap ;
+		max-width: 0;
+		color: @couleur2;
+		content: attr(data-hover);
+		transition: max-width 0.45s;
+	}
+
+	&:hover {
+		color: @couleur ;
+	}
+
+	&:hover:before, &:focus:before, &:active:before {
+		max-width: 100%;
+	}
+}
+
+.btn(@couleur, @couleur2) {
+	.btnWithoutBorder(@couleur, @couleur2);
+
+	border-bottom: 3px solid @couleur;
+	border-top: 3px solid @couleur;	
+	
+	&:before {					
+		padding: 8px 0px;
+		border-top: 2px solid @couleur2;
+		border-bottom: 2px solid @couleur2;
+	}
+}
+
