@@ -2,22 +2,88 @@
 COVER
 ************/
 
+#titles
+{
+
+	@media @min-md-media
+	{
+		position: absolute;
+		top: 25%;
+	}
+	text-align: center;
+}
+
+#scrollDown
+{
+	background-image: url("../img/style/downArrow.png");
+	background-repeat: none;
+	height: 44px;
+	width: 95px;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	-webkit-animation : bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		top : 0px;
+	}
+	40% {
+		top: -15px;
+	}
+	60% {
+		top: -7px;
+	} 
+}
+
+#titles h2
+{
+	font-weight: bold;	
+	@media @min-md-media
+	{
+		font-size: 4vw;
+	}
+	font-size: 8vw;
+}
+
 #maximeEngel {
-	font-weight: bold;
-	font-size: 5em;
+	font-weight: bold;	
+	@media @min-md-media
+	{
+		font-size: 6vw;
+	}
+	font-size: 12vw;
 }
 
 #cover {
-	height: 100% - @menuSizePerct;
+	height: 100%;
+
+	@media @min-md-media
+	{
+		height: 100vh - @menuSizeVH;
+	}
 	position: relative;
 	background-color: 	@jaune ;
+	width: 100%;
+
+	text-align: center;
 }
 
 #photoMoi {
-	width : 50% ;
-	position: absolute;
-	top : 0px ;
-	right : 0px ;
+
+	max-width: 80%;
+	height: auto;
+
+	@media @min-md-media
+	{
+		max-width: 50%;
+		height: auto;
+		position: absolute;
+		top : 0px ;
+		right : 0px ;
+	}
+	
 }
 
 /************
@@ -25,5 +91,13 @@ PROFILE
 ************/
 
 #profile {
-	background-color: 	@gris ;
+	background-color: 	@blanc ;
+}
+
+/************
+COMPETENCES
+************/
+
+#competences {
+	background-color: 	@noir ;
 }

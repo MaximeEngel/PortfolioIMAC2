@@ -4,31 +4,34 @@ MAIN MENU
 
 #mainMenu
 {
-	/* height : @menuSizePerct  */;
-	min-height: 55px ;
-	width : 100% ;
-	background-color: @noir ;
-	position: fixed ;
-	z-index: 1000 ;
+	@media @min-md-media
+	{
+		height : @menuSizeVH ;	
+		min-height: 55px ;
+		position: fixed ;
+		top:0px;
+		z-index: 1000 ;
+	}
+
+	background-color: @noir ;	
+	width: 100%;
 
 	nav {
-		height : 100% ;
-		width: 100% ;
-		
-	line-height: 55px;
-	
+		height: 100%;
+
 		div
-		{
-
-		line-height: normal;
-			display : inline-block ;
-			vertical-align: middle ;
-		}	
+		{		
+			font-size:  1.8rem;
+			text-align: center;
+			display: inline-block;
+			
+			height: 100%;
+			width:100%;
+			@media @min-md-media
+			{
+				width:24%;	
+				padding-left: 2%;							
+			}	
+		}
 	}
-}
-
-.offsetMenu {
-	height: 100% ;
-	position: relative;	
-	top : @menuSizePerct ;
 }

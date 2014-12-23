@@ -3,32 +3,68 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css">
 	<link rel="stylesheet" href="styles/main.css">
-	<title></title>
+	<!-- <link rel="stylesheet" href="bower_components/animate.css/animate.min.css"> -->
+
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/WOW/dist/wow.min.js"></script>
+	<script type="text/javascript"> wow = new WOW(
+    {
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       100,          // default
+      mobile:       true,       // default
+      live:         true        // default
+    }
+  )
+  wow.init();</script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="js/barcharts.js"></script>
+	
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>Ingénieur IMAC: Maxime Engel</title>    
 </head>
 <body>
-	<div class="full-height container-fluid">
-		<header id="mainMenu" class="row">
-			<nav>
-				<div class="col-xs-3"><a href="#" class="blancJaune" data-hover="Moi">Moi</a></div>
-				<div class="col-xs-3"><a href="#" class="blancJaune" data-hover="Profil">Profil</a></div>
-				<div class="col-xs-3"><a href="#" class="blancJaune" data-hover="Travaux">Travaux</a></div>
-				<div class="col-xs-3"><a href="#" class="blancJaune" data-hover="Contact">Contact</a></div>
-			</nav>
-			
-			
+	<div class="full-height">
+		<header id="mainMenu" >
+			<nav >
+				<div ><a href="#" class="blancJaune" data-hover="Moi">Moi</a></div>
+				<div ><a href="#" class="blancJaune" data-hover="Profil">Profil</a></div>
+				<div ><a href="#" class="blancJaune" data-hover="Travaux">Travaux</a></div>
+				<div ><a href="#" class="blancJaune" data-hover="Contact">Contact</a></div>
+			</nav>			
 		</header>
-		<div class="offsetMenu">	
-			<section id="cover" class="bande row">
-				<h1 class="btn-noirBlanc" id="maximeEngel" data-hover="MAXIME ENGEL">MAXIME ENGEL</h1>
-				<img src="img/cover.png" id="photoMoi" alt="Maxime Engel">
-			</section>
-			<section id="profile" class="bande row">
 
-		<a href="test.html">Test</a>
-				<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse odio incidunt animi sint, corrupti quam velit harum numquam, mollitia accusamus doloremque, at cum. Quos dolore suscipit similique eum sint enim molestiae reprehenderit qui iste laborum. A, ratione, aperiam. Obcaecati illum et iure ullam quam minus quisquam, eum minima autem odio!</p>
-				<p>Voluptatibus at delectus ipsum, ullam molestiae doloremque veniam adipisci asperiores ratione nisi nam unde qui ea porro debitis sequi minima. Optio at quas, inventore debitis! Totam voluptates magni ut tempore, provident cupiditate debitis veritatis doloremque accusantium minima ipsum voluptas consequuntur iusto sunt illo? Deleniti aliquam quis quas, reprehenderit obcaecati eius.</p>
-			</section>
-		</div>
+		<section id="cover" class="bande wow">
+			<div id="titles">				
+				<h1 class="btn-noirBlanc" id="maximeEngel" data-hover="MAXIME ENGEL">MAXIME ENGEL</h1>
+				<h2>Etudiant Ingénieur IMAC</h2>
+				<div id="scrollDown"></div>
+			</div>
+			<img src="img/cover.png" id="photoMoi" alt="Photo de l'auteur : Maxime Engel">
+		</section>
+		
+		<section id="profile" class="bande">
+		<div class="wow fromLeft">
+			<p>
+				Bienvenue dans mon domaine chère visiteur&nbsp;!
+			</p>
+			<p>
+				Etant en deuxième année à l'école d'ingénieur IMAC (Image Multimédia Audiovisuel Communication), mes <a href="#" class="btn-jauneNoir" data-hover="compétences">compétences</a> sont pluridisciplinaires, et mes <a href="#" class="btn-jauneNoir" data-hover="travaux">travaux</a> sont variés. Ce site est là pour vous en donner un apercu. Je vous invite également à en savoir plus sur ma vie d'être humain à travers un <a  href="#" class="btn-jauneNoir" data-hover="jeu">jeu</a> de mot-croisés.
+			</p>
+			<p>Je suis à la recherche d'un stage de développeur dans le domaine du jeux vidéo ou de la post-production. Celui-ci doit débuter le 1 juin 2015, pour une durée de 2/3 mois.
+			</p>
+			<p>Après avoir fais ma connaisance, je serais ravis de faire la votre.
+			 <a href="#" class="btn-jauneNoir" data-hover="Contactez moi !">Contactez moi !</a>
+			 </p>
+			 </div>
+		</section>
+		
+		<section id="competences" class="bande wow fromRight">
+			
+			<div id="chart_div">content html 5/10 ...</div>
+		</section>
+
+
 	</div>
 	
 	

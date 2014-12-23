@@ -6,13 +6,24 @@ CORPS
 	box-sizing: border-box ;
 }
 
-html, body, .full-height {
+body 
+{
+	background-color: @noir;
+	@media @min-md-media
+	{
+		padding-top: @menuSizeVH;
+	}
+	
+}
+
+html, body, .full-height
+{
 	height: 100%;
 }
 
 .bande
 {
-	padding: 5% ;
+	padding: 2% ;
 	box-sizing: border-box ;
 	overflow: hidden ;
 }
@@ -21,7 +32,6 @@ html, body, .full-height {
 p {
 	font-family: @font-principal, sans-serif;	
 	text-indent: @font-size-p ;
-	text-align: justify ;
 	
 	@media @lg-media
 	{
@@ -31,7 +41,7 @@ p {
 	{
 		font-size: @font-size-p * 0.9 ;
 	}
-	@media @s-media
+	@media @sm-media
 	{
 		font-size: @font-size-p * 0.8 ;
 	}
@@ -44,6 +54,11 @@ p {
 /************
 TITRES
 ************/
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: @font-principal, sans-serif;	
+}
 
 /************
 Liens/Bouttons
@@ -63,4 +78,38 @@ a {
 
 .btn-blancNoir {
 	.btn(@blanc, @noir) ;
+}
+
+.btn-jauneNoir {
+	font-weight: bold;
+	.btnBottomBorder(@jaune, @noir) ;
+}
+
+.btn-noirJaune {
+	.btnBottomBorder(@noir, @jaune) ;
+}
+
+/************
+Origin transform
+************/
+
+.originLeft
+{
+	transform-origin: left center;
+}
+
+.originRight
+{
+	transform-origin: right center;
+}
+
+.originTop
+{
+	transform-origin: center top;
+}
+
+
+.originBottom
+{
+	transform-origin: center bottom;
 }
