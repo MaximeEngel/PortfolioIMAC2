@@ -1,3 +1,12 @@
+#mainPage
+{
+	
+	@media @min-md-media
+	{
+		padding-top: @menuSizeVH;
+	}
+}
+
 /************
 COVER
 ************/
@@ -23,19 +32,10 @@ COVER
 	cursor: pointer;
 	position: relative;
 	-webkit-animation : bounce 2s infinite;
+	animation : bounce 2s infinite;
 }
 
-@-webkit-keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {
-		top : 0px;
-	}
-	40% {
-		top: -15px;
-	}
-	60% {
-		top: -7px;
-	} 
-}
+
 
 #titles h2
 {

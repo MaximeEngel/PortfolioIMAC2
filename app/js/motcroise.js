@@ -157,10 +157,10 @@ function ajouterDecription(zoneId, num, mot ) {
 	var desc ;
 	switch(mot.description.type) {
 		case "img" :
-			desc = "<p>"+num+" : <img src='"+mot.description.contenu+"' alt='"+mot.mot+"'></p>" ;
+			desc = "<p class='wow fromLeft'>"+num+" : <img src='"+mot.description.contenu+"' alt='"+mot.mot+"'></p>" ;
 			break ;
 		default :
-			desc = "<p>"+num+" : "+mot.description.contenu+"</p>" ;
+			desc = "<p class='wow fromLeft'>"+num+" : "+mot.description.contenu+"</p>" ;
 			break ;
 	}
 	$("#"+zoneId).append(desc) ;

@@ -3,7 +3,7 @@ $(document).ready(function() {
     // Smooth scroll on click on
     $(".scrollTo").on('click', function(evt) {
         evt.preventDefault();
-        $("body").animate({scrollTop : $($(this).attr("href")).offset().top - 50}, 500, 'swing');
+        $("html, body").animate({scrollTop : $($(this).attr("href")).offset().top - 50}, 500, 'swing');
     }) ;
 
     // Fade when scroll to good position
@@ -24,6 +24,7 @@ $(document).ready(function() {
 
 
         links.removeClass("active");
-        links.filter("[href=#"+current[0].id+"]").addClass("active") ;
+        if(current !== 'undefined')
+            links.filter("[href=#"+current[0].id+"]").addClass("active") ;
     }) ;
 });

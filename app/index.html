@@ -11,11 +11,11 @@
 	<script type="text/javascript" src="bower_components/WOW/dist/wow.min.js"></script>
 	<script type="text/javascript"> wow = new WOW(
     {
-      boxClass:     'wow',      // default
-      animateClass: 'animated', // default
-      offset:       10,          // default
-      mobile:       true,       // default
-      live:         true        // default
+      boxClass:     'wow',      
+      animateClass: 'animated', 
+      offset:       10,         
+      mobile:       true,       
+      live:         true        
     }
   )
   wow.init();</script>
@@ -24,18 +24,20 @@
     <script type="text/javascript" src="js/scroll.js"></script>
     <script type="text/javascript" src="js/motcroise.js"></script>
     <script type="text/javascript" src="js/contact.js"></script>
+    <script type="text/javascript" src="js/projet.js"></script>
 
 	
 
 	<title>Ingénieur IMAC: Maxime Engel</title>    
 </head>
 <body>
-	<div class="full-height">
+	<div id="mainPage" class="full-height">
 		<header id="mainMenu" >
 			<nav >
 				<div ><a href="#apropos" class="blancJaune scrollTo" data-hover="A propos">A propos</a></div>
 				<div ><a href="#competences" class="blancJaune scrollTo" data-hover="Compétences">Compétences</a></div>
 				<div ><a href="#projets" class="blancJaune scrollTo" data-hover="Projets">Projets</a></div>
+				<div ><a href="#jeu" class="blancJaune scrollTo" data-hover="Jeu">Jeu</a></div>
 				<div ><a href="#contact" class="blancJaune scrollTo" data-hover="Contact">Contact</a></div>
 			</nav>			
 		</header>
@@ -55,35 +57,39 @@
 				Bienvenue dans mon domaine chère visiteur&nbsp;!
 			</p>
 			<p>
-				Etant en deuxième année à l'école d'ingénieur IMAC (Image Multimédia Audiovisuel Communication), mes <a href="#competences" class="scrollTo btn-jauneNoir" data-hover="compétences">compétences</a> sont pluridisciplinaires, et mes <a href="#projets" class="scrollTo btn-jauneNoir" data-hover="projets">projets</a> sont variés. Ce site est là pour vous en donner un apercu. Je vous invite également à en savoir plus sur ma vie d'être humain à travers un <a  href="#" class="scrollTo btn-jauneNoir" data-hover="jeu">jeu</a> de mot-croisés.
+				Etant en deuxième année à l'école d'ingénieur IMAC (Image Multimédia Audiovisuel Communication), mes <a href="#competences" class="scrollTo btn-jauneNoir" data-hover="compétences">compétences</a> sont pluridisciplinaires, et mes <a href="#projets" class="scrollTo btn-jauneNoir" data-hover="projets">projets</a> sont variés. Ce site est là pour vous en donner un apercu. Je vous invite également à en savoir plus sur ma vie d'être humain à travers un <a  href="#jeu" class="scrollTo btn-jauneNoir" data-hover="jeu">jeu</a> de mot-croisés.
 			</p>
 			<p>Je suis à la recherche d'un stage de développeur dans le domaine du jeux vidéo ou de la post-production. Celui-ci doit débuter le 1 juin 2015, pour une durée de 2/3 mois.
 			</p>
 			<p>Après avoir fais ma connaisance, je serais ravis de faire la votre.
-			 <a href="#" class="btn-jauneNoir" data-hover="Contactez moi !">Contactez moi !</a>
+			 <a href="#contact" class="btn-jauneNoir scrollTo" data-hover="Contactez moi !">Contactez moi !</a>
 			 </p>
 			 </div>
 		</section>
 		
-		<section id="competences" class="bande wow fromRight" data-scrollspy>	
-			<h2 class="blanc">Mes compétences</h2>		
-			<div id="chart_prog" class="chart"><!-- Données pour le référencement --></div><!-- 
-			--><div id="chart_software" class="chart"><!-- Données pour le référencement --></div><!-- 
-			--><div id="chart_web" class="chart"><!-- Données pour le référencement --></div>
-			<div class="center"><a href="#" class="btnBig btn-blancJaune" data-hover="Télécharger mon CV">Télécharger mon CV</a></div>
+		<section id="competences" class="bande" data-scrollspy>	
+			<h2 class="blanc wow fromLeft">Mes compétences</h2>		
+			<div id="chart_prog" class="chart wow fromLeft"><!-- Données pour le référencement --></div><!-- 
+			--><div id="chart_software" class="chart wow fromRight"><!-- Données pour le référencement --></div><!-- 
+			--><div id="chart_web" class="chart wow fromLeft"><!-- Données pour le référencement --></div>
+			<div class="center  wow fromRight"><a href="#" class="btnBig btn-blancJaune" data-hover="Télécharger mon CV">Télécharger mon CV</a></div>
 		</section>
 
 
-		<section id="projets" class="bande wow fromLeft noir" data-scrollspy>
-			<h2>Projets</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque quae quasi, sint illum numquam eum repudiandae iure quos voluptatibus distinctio consectetur similique soluta iusto accusantium, reiciendis recusandae nam veniam.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque quae quasi, sint illum numquam eum repudiandae iure quos voluptatibus distinctio consectetur similique soluta iusto accusantium, reiciendis recusandae nam veniam.</p>
+		<section id="projets" class="bande" data-scrollspy>
+			<h2 class="noir wow fromLeft center">Projets</h2>
+			<h3>Développement</h3>
+			<a href="#" class="loadProjet" data-json="doubleMoi"><img src="img/gagne.jpg" alt="Miniature du projet double moi"></a>
+			<a href="#" class="loadProjet" data-json="arkanopong"><img src="img/gagne.jpg" alt="Miniature du projet double moi"></a>
+			<h3>Image</h3>
+			<h3>Audiovisuel</h3>
+			<h3>Web</h3>
 		</section>
 
 
-		<section id="jeu" class="bande wow fromLeft blanc" data-scrollspy>
-			<h2 class="blanc center">Jouez avec moi</h2>
-			<p id="motCroiseLoadGrille">
+		<section id="jeu" class="bande blanc" data-scrollspy>
+			<h2 class="blanc center wow fromLeft">Jouez avec moi</h2>
+			<p id="motCroiseLoadGrille" class="wow fromRight">
 				Etant frillant de jeu de société, je vous propose d'en savoir plus sur moi au travers d'un jeu de mot croisé interactif. Cliquez sur une case puis appuyez directement sur les touches de votre clavier pour la remplir. Un message s'affichera lorsque vous aurez tout bon.<br>
 				<span class="jaune">Astuce :</span> Utilisez les flèches directionnelles pour naviguer plus rapidement !
 			</p>
@@ -107,35 +113,45 @@
 				</div>
 			</div>
 			<div class="center">
-				<a href="#motCroiseGrille" id="reinitGrille" class="btnBig btn-blancJaune scrollTo" data-hover="Réinitialiser la grille">Réinitialiser la grille</a>
-				<a href="#motCroiseGrille" id="showAnswer" class="btnBig btn-blancJaune scrollTo" data-hover="Voir les réponses">Voir les réponses</a>
+				<a href="#motCroiseGrille" id="reinitGrille" class="btnBig btn-blancJaune scrollTo wow fromLeft" data-hover="Réinitialiser la grille">Réinitialiser la grille</a>
+				<a href="#motCroiseGrille" id="showAnswer" class="btnBig btn-blancJaune scrollTo wow fromRight" data-hover="Voir les réponses">Voir les réponses</a>
 			</div>
 		</section>
 
-		<section id="contact" class="bande wow fromRight blanc" data-scrollspy>
-				<h2 class="noir">Contact</h2>
-				<form class="noir" id="contact" action="contact.php" method="POST">
+		<section id="contact" class="bande blanc" data-scrollspy>
+				<h2 class="noir wow fromRight">Contact</h2>
+				<form  class="noir" id="contact" action="contact.php" method="POST">
 
-				<p>
-					<input name="nomprenom" type="text" placeholder="Prénom Nom" id="nomprenom" />
+				<p class="wow fromLeft">
+					<input name="nomprenom" type="text" placeholder="Prénom Nom" id="nomprenom" required/>
 				</p>
 
-				<p>
-					<input name="email" type="email" id="email" placeholder="Email" />
+				<p class="wow fromRight">
+					<input name="email" type="email" id="email" placeholder="Email" required/>
 				</p>
 
-				<p>
-					<textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+				<p class="wow fromLeft">
+					<textarea name="message" id="message" rows="5" placeholder="Message" required></textarea>
 				</p>
 
 				<!-- Button (et pas input) pour avoir :before pour l'effet de survol -->
-				<button type="submit" data-hover="Envoyer" class="btnBig btn-noirBlanc">Envoyer</button>
+				<p id="pEnvoieMessage">
+					<button type="submit" data-hover="Envoyer" class="btnBig btn-noirBlanc wow fromRight">Envoyer</button>
+				</p>
 			
 			</form>
 		</section>
+	</div>
 
-		
+	<div id="projet" class="full-height blanc">
+		<section>
+			<h2>Projet</h2>
+						<a href="#" class="loadProjet" data-json="arkanopong"><img src="img/gagne.jpg" alt="Miniature du projet double moi"></a>
+		</section>
+	</div>
 
+	<div id="loader">
+		<img src="img/style/loadAjax.gif" alt="Loader ajax">
 	</div>
 	
 	

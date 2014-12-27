@@ -37,7 +37,7 @@
         } else {
             // Set a 500 (internal server error) response code.
             // http_response_code(500);
-            echo "Oops! Un problème est survenu, merci d'envoyer un message à <a mailto='maximeengel@gmail.com'>maximeengel@gmail.com</a>.";
+            echo "Oops! Un problème est survenu, merci d'envoyer un message à <a data-hover='maximeengel@gmail.com' href='mailto:maximeengel@gmail.com' class='btn-noirBlanc'>maximeengel@gmail.com</a>.";
         }
 
     } else {

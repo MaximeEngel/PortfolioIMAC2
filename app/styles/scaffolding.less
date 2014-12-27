@@ -9,12 +9,7 @@ CORPS
 
 body 
 {
-	background-color: @noir;
-	@media @min-md-media
-	{
-		padding-top: @menuSizeVH;
-	}
-	
+	background-color: @noir;	
 }
 
 html, body, .full-height
@@ -167,4 +162,19 @@ Color
 .jaune
 {
 	color : @jaune;
+}
+
+/************
+LOADER
+************/
+
+#loader
+{
+	width : 48px;
+	height: 48px;
+	position: fixed;
+	top:50%;
+	left: 50%;
+	margin-left : -24px ;
+	margin-top: -24px;
 }
