@@ -2,7 +2,6 @@
 
 .btnWithoutBorder(@couleur, @couleur2) {
 	padding: 10px 0px;
-	margin: 0px 5px;
 	color: @couleur;
 	position: relative;
 	display: inline-block;
@@ -28,7 +27,7 @@
 		color: @couleur ;
 	}
 
-	&:hover:before, &:focus:before, &:active:before {
+	&:hover:before, &.active:before {
 		max-width: 100%;
 	}
 }

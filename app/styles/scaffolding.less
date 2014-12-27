@@ -3,7 +3,8 @@ CORPS
 ************/
 
 * {
-	box-sizing: border-box ;
+	box-sizing: border-box ;	
+	font-family: @font-principal, sans-serif;
 }
 
 body 
@@ -29,8 +30,7 @@ html, body, .full-height
 }
 
 
-p {
-	font-family: @font-principal, sans-serif;	
+p {	
 	text-indent: @font-size-p ;
 	
 	@media @lg-media
@@ -51,6 +51,11 @@ p {
 	}
 }
 
+.center
+{
+	text-align: center;
+}
+
 /************
 TITRES
 ************/
@@ -58,7 +63,25 @@ TITRES
 h1, h2, h3, h4, h5, h6
 {
 	font-family: @font-principal, sans-serif;	
+	font-weight: normal;
 }
+
+h2
+{
+	font-size: @font-size-p * 1.4 ;
+	@media @min-md-media {
+		font-size: @font-size-p * 1.8 ;
+	}
+}
+
+h3
+{
+	font-size: @font-size-p * 1.3 ;
+	@media @min-md-media {
+		font-size: @font-size-p * 1.6 ;
+	}
+}
+
 
 /************
 Liens/Bouttons
@@ -69,6 +92,10 @@ a {
 
 	&.blancJaune {
 		.btnWithoutBorder(@blanc, @jaune) ;
+	}
+
+	&.btn-blancJaune {
+		.btn(@blanc, @jaune) ;
 	}
 }
 
@@ -87,6 +114,15 @@ a {
 
 .btn-noirJaune {
 	.btnBottomBorder(@noir, @jaune) ;
+}
+
+.btnBig
+{
+	margin: 1%;
+	font-size: 8vw ;
+	@media @min-md-media {
+		font-size: 3vw ;
+	}
 }
 
 /************
@@ -112,4 +148,23 @@ Origin transform
 .originBottom
 {
 	transform-origin: center bottom;
+}
+
+/************
+Color
+************/
+
+.blanc
+{
+	color : @blanc;
+}
+
+.noir
+{
+	color : @noir;
+}
+
+.jaune
+{
+	color : @jaune;
 }

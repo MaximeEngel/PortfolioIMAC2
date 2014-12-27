@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+	<meta charset="UTF-8">	
+	<meta name=viewport content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css">
 	<link rel="stylesheet" href="styles/main.css">
-	<!-- <link rel="stylesheet" href="bower_components/animate.css/animate.min.css"> -->
 
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="bower_components/WOW/dist/wow.min.js"></script>
@@ -11,7 +13,7 @@
     {
       boxClass:     'wow',      // default
       animateClass: 'animated', // default
-      offset:       100,          // default
+      offset:       10,          // default
       mobile:       true,       // default
       live:         true        // default
     }
@@ -19,37 +21,41 @@
   wow.init();</script>
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript" src="js/barcharts.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/motcroise.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+
 	
-	<meta name=viewport content="width=device-width, initial-scale=1">
+
 	<title>Ingénieur IMAC: Maxime Engel</title>    
 </head>
 <body>
 	<div class="full-height">
 		<header id="mainMenu" >
 			<nav >
-				<div ><a href="#" class="blancJaune" data-hover="Moi">Moi</a></div>
-				<div ><a href="#" class="blancJaune" data-hover="Profil">Profil</a></div>
-				<div ><a href="#" class="blancJaune" data-hover="Travaux">Travaux</a></div>
-				<div ><a href="#" class="blancJaune" data-hover="Contact">Contact</a></div>
+				<div ><a href="#apropos" class="blancJaune scrollTo" data-hover="A propos">A propos</a></div>
+				<div ><a href="#competences" class="blancJaune scrollTo" data-hover="Compétences">Compétences</a></div>
+				<div ><a href="#projets" class="blancJaune scrollTo" data-hover="Projets">Projets</a></div>
+				<div ><a href="#contact" class="blancJaune scrollTo" data-hover="Contact">Contact</a></div>
 			</nav>			
 		</header>
 
-		<section id="cover" class="bande wow">
+		<section id="cover" class="bande">
 			<div id="titles">				
 				<h1 class="btn-noirBlanc" id="maximeEngel" data-hover="MAXIME ENGEL">MAXIME ENGEL</h1>
 				<h2>Etudiant Ingénieur IMAC</h2>
-				<div id="scrollDown"></div>
+				<a href="#apropos" class="scrollTo" rel="next" id="scrollDown"></a>
 			</div>
 			<img src="img/cover.png" id="photoMoi" alt="Photo de l'auteur : Maxime Engel">
 		</section>
 		
-		<section id="profile" class="bande">
+		<section id="apropos" class="bande" data-scrollspy>
 		<div class="wow fromLeft">
 			<p>
 				Bienvenue dans mon domaine chère visiteur&nbsp;!
 			</p>
 			<p>
-				Etant en deuxième année à l'école d'ingénieur IMAC (Image Multimédia Audiovisuel Communication), mes <a href="#" class="btn-jauneNoir" data-hover="compétences">compétences</a> sont pluridisciplinaires, et mes <a href="#" class="btn-jauneNoir" data-hover="travaux">travaux</a> sont variés. Ce site est là pour vous en donner un apercu. Je vous invite également à en savoir plus sur ma vie d'être humain à travers un <a  href="#" class="btn-jauneNoir" data-hover="jeu">jeu</a> de mot-croisés.
+				Etant en deuxième année à l'école d'ingénieur IMAC (Image Multimédia Audiovisuel Communication), mes <a href="#competences" class="scrollTo btn-jauneNoir" data-hover="compétences">compétences</a> sont pluridisciplinaires, et mes <a href="#projets" class="scrollTo btn-jauneNoir" data-hover="projets">projets</a> sont variés. Ce site est là pour vous en donner un apercu. Je vous invite également à en savoir plus sur ma vie d'être humain à travers un <a  href="#" class="scrollTo btn-jauneNoir" data-hover="jeu">jeu</a> de mot-croisés.
 			</p>
 			<p>Je suis à la recherche d'un stage de développeur dans le domaine du jeux vidéo ou de la post-production. Celui-ci doit débuter le 1 juin 2015, pour une durée de 2/3 mois.
 			</p>
@@ -59,11 +65,76 @@
 			 </div>
 		</section>
 		
-		<section id="competences" class="bande wow fromRight">
-			
-			<div id="chart_div">content html 5/10 ...</div>
+		<section id="competences" class="bande wow fromRight" data-scrollspy>	
+			<h2 class="blanc">Mes compétences</h2>		
+			<div id="chart_prog" class="chart"><!-- Données pour le référencement --></div><!-- 
+			--><div id="chart_software" class="chart"><!-- Données pour le référencement --></div><!-- 
+			--><div id="chart_web" class="chart"><!-- Données pour le référencement --></div>
+			<div class="center"><a href="#" class="btnBig btn-blancJaune" data-hover="Télécharger mon CV">Télécharger mon CV</a></div>
 		</section>
 
+
+		<section id="projets" class="bande wow fromLeft noir" data-scrollspy>
+			<h2>Projets</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque quae quasi, sint illum numquam eum repudiandae iure quos voluptatibus distinctio consectetur similique soluta iusto accusantium, reiciendis recusandae nam veniam.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque quae quasi, sint illum numquam eum repudiandae iure quos voluptatibus distinctio consectetur similique soluta iusto accusantium, reiciendis recusandae nam veniam.</p>
+		</section>
+
+
+		<section id="jeu" class="bande wow fromLeft blanc" data-scrollspy>
+			<h2 class="blanc center">Jouez avec moi</h2>
+			<p id="motCroiseLoadGrille">
+				Etant frillant de jeu de société, je vous propose d'en savoir plus sur moi au travers d'un jeu de mot croisé interactif. Cliquez sur une case puis appuyez directement sur les touches de votre clavier pour la remplir. Un message s'affichera lorsque vous aurez tout bon.<br>
+				<span class="jaune">Astuce :</span> Utilisez les flèches directionnelles pour naviguer plus rapidement !
+			</p>
+			<div class="Aleft" id="motCroise">					
+				<div id="motCroiseLeft">	
+						
+						<div id="motCroiseDescription">
+							<h3>Mots verticaux :</h3>
+							<div id="motCroiseDescriptionVerticaux">
+								
+							</div>
+										
+							<h3>Mots horizontaux :</h3>
+							<div id="motCroiseDescriptionHorizontaux">
+								
+							</div>
+						</div>
+					</div><!-- 									 
+				--><div id="motCroiseGrille">
+			
+				</div>
+			</div>
+			<div class="center">
+				<a href="#motCroiseGrille" id="reinitGrille" class="btnBig btn-blancJaune scrollTo" data-hover="Réinitialiser la grille">Réinitialiser la grille</a>
+				<a href="#motCroiseGrille" id="showAnswer" class="btnBig btn-blancJaune scrollTo" data-hover="Voir les réponses">Voir les réponses</a>
+			</div>
+		</section>
+
+		<section id="contact" class="bande wow fromRight blanc" data-scrollspy>
+				<h2 class="noir">Contact</h2>
+				<form class="noir" id="contact" action="contact.php" method="POST">
+
+				<p>
+					<input name="nomprenom" type="text" placeholder="Prénom Nom" id="nomprenom" />
+				</p>
+
+				<p>
+					<input name="email" type="email" id="email" placeholder="Email" />
+				</p>
+
+				<p>
+					<textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+				</p>
+
+				<!-- Button (et pas input) pour avoir :before pour l'effet de survol -->
+				<button type="submit" data-hover="Envoyer" class="btnBig btn-noirBlanc">Envoyer</button>
+			
+			</form>
+		</section>
+
+		
 
 	</div>
 	

@@ -1,0 +1,39 @@
+{
+	"title" : "Expérience langages de programmation",
+	"minValue" : 0,
+	"maxValue" : 10,
+	"ratioSize" : 0.56,
+	"columns" :	[
+					{
+						"type": "string",
+						"label": "Langage"
+					},
+					{
+						"type": "number",
+						"label": "Expérience"
+					}
+				],
+	"rows" :	[
+					{
+						"label" : "Java",
+						"value" : 9
+					},
+					{
+						"label" : "C++",
+						"value" : 7
+					},
+					{
+						"label" : "OpenGl",
+						"value" : 7
+					},
+					{
+						"label" : "C",
+						"value" : 7
+					},
+					{
+						"label" : "QML",
+						"value" : 8
+					}
+				]
+
+}

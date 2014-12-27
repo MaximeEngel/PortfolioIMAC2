@@ -1,0 +1,43 @@
+{
+	"title" : "Expérience logiciels graphiques",
+	"minValue" : 0,
+	"maxValue" : 10,
+	"ratioSize" : 0.56,
+	"columns" :	[
+					{
+						"type": "string",
+						"label": "Langage"
+					},
+					{
+						"type": "number",
+						"label": "Expérience"
+					}
+				],
+	"rows" :	[
+					{
+						"label" : "Photoshop",
+						"value" : 9
+					},
+					{
+						"label" : "After Effects",
+						"value" : 8.5
+					},
+					{
+						"label" : "Illustrator",
+						"value" : 8
+					},
+					{
+						"label" : "Premiere",
+						"value" : 8
+					},
+					{
+						"label" : "Flash",
+						"value" : 7.5
+					},
+					{
+						"label" : "Blender",
+						"value" : 7
+					}
+				]
+
+}

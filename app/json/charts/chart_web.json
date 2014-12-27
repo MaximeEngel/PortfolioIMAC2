@@ -1,0 +1,43 @@
+{
+	"title" : "Expérience langages web",
+	"minValue" : 0,
+	"maxValue" : 10,
+	"ratioSize" : 0.56,
+	"columns" :	[
+					{
+						"type": "string",
+						"label": "Langage"
+					},
+					{
+						"type": "number",
+						"label": "Expérience"
+					}
+				],
+	"rows" :	[
+					{
+						"label" : "HTML",
+						"value" : 10
+					},
+					{
+						"label" : "CSS",
+						"value" : 9.5
+					},
+					{
+						"label" : "Javascript/JQuery",
+						"value" : 8.5
+					},
+					{
+						"label" : "PHP",
+						"value" : 8.5
+					},
+					{
+						"label" : "MySQL",
+						"value" : 8
+					},
+					{
+						"label" : "Wordpress",
+						"value" : 7
+					}
+				]
+
+}
