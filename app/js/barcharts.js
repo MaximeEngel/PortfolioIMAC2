@@ -4,7 +4,7 @@ google.load('visualization', '1.0', {'packages':['corechart']});
 var accentColor;
 var widthChart;
 
-$( document ).ready(function() {
+$(document).ready(function() {
     accentColor = $("#cover").css("background-color");
     
     resizeChart();

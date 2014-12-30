@@ -1,8 +1,72 @@
 #projet
 {
-	background-color: pink;
+	background-color: @blanc;
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	width: 100%;
+	display: none; 
+	min-height: 100%;
+
+	#titreWrap
+	{
+		background-color: @jaune ;
+	}
+
+	#accroche
+	{
+		background-color: @noir ;
+	}
+
+	#contenuProjet
+	{
+		position: relative;
+	}
+
+	#media, #description {
+		width : 100%;
+		@media @min-md-media
+		{
+			position: absolute;
+			top: 0px ;
+		}
+		display: inline-block;
+	}
+
+	@media @min-md-media
+	{
+		#description
+		{			
+			width : 40% ;
+			right : 0px
+		}
+		#media
+		{			
+			width : 60% ;
+			left : 0px ;
+
+			&::after {
+				content:""; 
+				background: @noir; 
+				position: absolute; 
+				bottom: 25%; 
+				right: 0; 
+				height: 50%; 
+				width: 1px;
+			}
+		}
+	}
+	#media {
+		img {
+			width : 500px ;
+		}
+		background-color: green ;
+
+	}
+
+	#description
+	{
+		background-color: orange ;
+	}
+
 }

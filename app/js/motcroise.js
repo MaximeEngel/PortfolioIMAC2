@@ -70,9 +70,12 @@ $(document).ready(function() {
 		}
 
 	}) ;
-	$( window ).resize(function() {
-		drawGrille(grilleProposition) ;
-	}) ;
+	if(!mobile)
+	{
+		$( window ).resize(function() {
+			drawGrille(grilleProposition) ;
+		}) ;
+	}
 }) ;
 
 function initGrille(grille) {

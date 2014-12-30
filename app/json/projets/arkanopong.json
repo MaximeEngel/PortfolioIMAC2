@@ -1,4 +1,17 @@
 {
 	"titre" : "Arkanopong",
-	"description" : "lorem ipsum fjsdj sdlkfj ldksfj sdflk jsdlfk jsdlfk jsdlfk jsd flkj dslkf "
+	"accroche" : "lorem ipsum fjsdj sdlkfj ldksfj sdflk jsdlfk jsdlfk jsdlfk jsd flkj dslkf ",
+	"description" : {
+		"annee" : 2014,
+		"details" : "<p>blablabla</p><p>bbjcvbjclvbj bj cvlkbj cvlkb jvckl bjcvkl bjv</p>"
+	},
+	"medias" : [
+		
+		{
+			"type" : "img",
+			"src" : "gagne.jpg"
+		}
+
+
+	]
 }

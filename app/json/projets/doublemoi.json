@@ -1,4 +1,19 @@
 {
 	"titre" : "Double Moi",
-	"description" : "lorem ipsum fjsdj sdlkfj ldksfj sdflk jsdlfk jsdlfk jsdlfk jsd flkj dslkf "
+	"accroche" : "lorem ipsum fjsdj sdlkfj ldksfj sdflk jsdlfk jsdlfk jsdlfk jsd flkj dslkf ",
+	"description" : {		
+		"contexte" : "Personnel",
+		"techno" : "C, OpenGl"
+	},
+	"medias" : [
+		{
+			"type" : "img",
+			"src" : "style/downArrow.png"
+		},
+		{
+			"type" : "img",
+			"src" : "style/loadAjax.gif"
+		}
+
+	]
 }

@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+    wow = new WOW(
+        {
+          boxClass:     'wow',      
+          animateClass: 'animated', 
+          offset:       10,         
+          mobile:       false,       
+          live:         true        
+        }
+      )
+      wow.init();
+
     // Smooth scroll on click on
     $(".scrollTo").on('click', function(evt) {
         evt.preventDefault();
@@ -27,4 +38,6 @@ $(document).ready(function() {
         if(current !== 'undefined')
             links.filter("[href=#"+current[0].id+"]").addClass("active") ;
     }) ;
+
+    
 });

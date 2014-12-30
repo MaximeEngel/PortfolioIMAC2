@@ -4,34 +4,14 @@
 	<meta charset="UTF-8">	
 	<meta name=viewport content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css">
-	<link rel="stylesheet" href="styles/main.css">
-
-	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="bower_components/WOW/dist/wow.min.js"></script>
-	<script type="text/javascript"> wow = new WOW(
-    {
-      boxClass:     'wow',      
-      animateClass: 'animated', 
-      offset:       10,         
-      mobile:       true,       
-      live:         true        
-    }
-  )
-  wow.init();</script>
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="js/barcharts.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
-    <script type="text/javascript" src="js/motcroise.js"></script>
-    <script type="text/javascript" src="js/contact.js"></script>
-    <script type="text/javascript" src="js/projet.js"></script>
-
-	
-
+	<link rel="stylesheet" href="styles/main.min.css">
 	<title>Ingénieur IMAC: Maxime Engel</title>    
 </head>
 <body>
 	<div id="mainPage" class="full-height">
+		
+		<!-- MENU -->
+
 		<header id="mainMenu" >
 			<nav >
 				<div ><a href="#apropos" class="blancJaune scrollTo" data-hover="A propos">A propos</a></div>
@@ -42,19 +22,23 @@
 			</nav>			
 		</header>
 
+		<!-- COUVERTURE -->
+
 		<section id="cover" class="bande">
 			<div id="titles">				
 				<h1 class="btn-noirBlanc" id="maximeEngel" data-hover="MAXIME ENGEL">MAXIME ENGEL</h1>
 				<h2>Etudiant Ingénieur IMAC</h2>
 				<a href="#apropos" class="scrollTo" rel="next" id="scrollDown"></a>
 			</div>
-			<img src="img/cover.png" id="photoMoi" alt="Photo de l'auteur : Maxime Engel">
+			<img src="img/cover.png"  id="photoMoi" alt="Photo de l'auteur : Maxime Engel">
 		</section>
+
+		<!-- A PROPOS -->
 		
 		<section id="apropos" class="bande" data-scrollspy>
 		<div class="wow fromLeft">
 			<p>
-				Bienvenue dans mon domaine chère visiteur&nbsp;!
+				Bienvenue dans mon domaine cher visiteur&nbsp;!
 			</p>
 			<p>
 				Etant en deuxième année à l'école d'ingénieur IMAC (Image Multimédia Audiovisuel Communication), mes <a href="#competences" class="scrollTo btn-jauneNoir" data-hover="compétences">compétences</a> sont pluridisciplinaires, et mes <a href="#projets" class="scrollTo btn-jauneNoir" data-hover="projets">projets</a> sont variés. Ce site est là pour vous en donner un apercu. Je vous invite également à en savoir plus sur ma vie d'être humain à travers un <a  href="#jeu" class="scrollTo btn-jauneNoir" data-hover="jeu">jeu</a> de mot-croisés.
@@ -66,6 +50,8 @@
 			 </p>
 			 </div>
 		</section>
+
+		<!-- COMPETENCES -->
 		
 		<section id="competences" class="bande" data-scrollspy>	
 			<h2 class="blanc wow fromLeft">Mes compétences</h2>		
@@ -75,17 +61,22 @@
 			<div class="center  wow fromRight"><a href="#" class="btnBig btn-blancJaune" data-hover="Télécharger mon CV">Télécharger mon CV</a></div>
 		</section>
 
+		<!-- PROJETS -->
 
 		<section id="projets" class="bande" data-scrollspy>
 			<h2 class="noir wow fromLeft center">Projets</h2>
-			<h3>Développement</h3>
-			<a href="#" class="loadProjet" data-json="doubleMoi"><img src="img/gagne.jpg" alt="Miniature du projet double moi"></a>
-			<a href="#" class="loadProjet" data-json="arkanopong"><img src="img/gagne.jpg" alt="Miniature du projet double moi"></a>
-			<h3>Image</h3>
-			<h3>Audiovisuel</h3>
-			<h3>Web</h3>
+			<h3 class="jaune">Développement</h3>
+			<a href="#" id="arkanopong" data-json="arkanopong" class="loadProjet wow fromLeft"><img src="img/gagne.jpg" alt="Miniature du projet double moi"></a>
+			<a href="#" id="doubleMoi" data-json="doubleMoi" class="loadProjet wow fromLeft"><img src="img/gagne.jpg" alt="Miniature du projet double moi"></a>
+			<a href="#" id="doubleMoi" data-json="doubleMoi" class="loadProjet wow fromLeft"><img src="img/gagne.jpg" alt="Miniature du projet double moi"></a>
+			<a href="#" id="doubleMoi" data-json="doubleMoi" class="loadProjet wow fromRight"><img src="img/gagne.jpg" alt="Miniature du projet double moi"></a>
+			<a href="#" id="doubleMoi" data-json="doubleMoi" class="loadProjet wow fromRight"><img src="img/gagne.jpg" alt="Miniature du projet double moi"></a>
+			<h3 class="jaune">Image</h3>
+			<h3 class="jaune">Audiovisuel</h3>
+			<h3 class="jaune">Web</h3>
 		</section>
 
+		<!-- JEU MOT CROISE -->
 
 		<section id="jeu" class="bande blanc" data-scrollspy>
 			<h2 class="blanc center wow fromLeft">Jouez avec moi</h2>
@@ -118,9 +109,11 @@
 			</div>
 		</section>
 
+		<!-- CONTACT -->
+
 		<section id="contact" class="bande blanc" data-scrollspy>
 				<h2 class="noir wow fromRight">Contact</h2>
-				<form  class="noir" id="contact" action="contact.php" method="POST">
+				<form  class="noir" action="contact.php" method="POST">
 
 				<p class="wow fromLeft">
 					<input name="nomprenom" type="text" placeholder="Prénom Nom" id="nomprenom" required/>
@@ -143,17 +136,43 @@
 		</section>
 	</div>
 
+	<!-- TEMPLATE DU PROJET  -->
+
 	<div id="projet" class="full-height blanc">
 		<section>
-			<h2>Projet</h2>
-						<a href="#" class="loadProjet" data-json="arkanopong"><img src="img/gagne.jpg" alt="Miniature du projet double moi"></a>
+			<div id="titreWrap" class="center">				
+				<h2 class="btn-noirBlanc" >Projet</h2>
+			</div>
+			<div id="accroche" class="center"></div>
+			<div></div>
+			<div id="contenuProjet">
+				<div id="media">
+					
+				</div><!--
+			 --><div id="description">
+					<p class=" cachable"><span class="jaune">Année : </span><span id="anneeJs" class="noir"></span></p>
+					<p class=" cachable"><span class="jaune">Techno : </span><span id="technoJs" class="noir"></span></p>
+					<p class=" cachable"><span class="jaune">Contexte : </span><span id="contexteJs" class="noir"></span></p>
+					<div id="detail" class="cachable">
+						<p class="jaune">Détails :</p>
+						<div id="detailsJs" class="noir"></div>
+					</div>
+					<div class="center">
+						<a id="precedent" href="#" data-hover="Précédent" class="loadProjet btnBig btn-blancJaune scrollTo wow fromLeft" data-json="precedent.json">Précédent</a>
+						<a id="suivant" href="#" data-hover="Suivant" class="loadProjet btnBig btn-blancJaune scrollTo wow fromLeft" data-json="suivant.json">Suivant</a>
+					</div>					
+				</div>
+			</div>
 		</section>
 	</div>
-
 	<div id="loader">
 		<img src="img/style/loadAjax.gif" alt="Loader ajax">
 	</div>
-	
-	
+
+	<!-- JAVASCRIPT -->
+
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="js/lib.min.js"></script> 
+    <script type="text/javascript" src="js/app.min.js"></script> 	
 </body>
 </html>

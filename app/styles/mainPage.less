@@ -49,15 +49,6 @@ COVER
 	font-size: 8vw;
 }
 
-#maximeEngel {
-	font-weight: bold;	
-	@media @min-md-media
-	{
-		font-size: 6vw;
-	}
-	font-size: 12vw;
-}
-
 #cover {
 	height: 100%;
 
@@ -125,6 +116,33 @@ PROJETS
 
 #projets {
 	background-color: 	@blanc ;
+	text-align: center;
+
+	.loadProjet
+	{
+		display: inline-block;
+		width: 30%;
+		margin: 1% 1%;
+		@media @sm-media
+		{
+			width: 45%;
+		}
+		@media @xs-media
+		{
+			width: 100%;
+			margin: 1% 0%;
+		}
+
+		background-color: 	green ;
+		
+		img {
+			width : 100%;
+			height: auto ;
+
+		vertical-align: middle ;
+		}
+	}
+
 }
 
 /************
@@ -162,6 +180,8 @@ CONTACT
 		input, textarea
 		{
 			width: 100%;
+			position: relative;
+			
 			@media @min-md-media
 			{
 				width : 50% ;
@@ -186,6 +206,14 @@ CONTACT
 			   color: highlight(@noir, 10%);  
 			}
 		}
+
+		p::before {
+				content: "*" ;
+				position: absolute;
+				top: 0px ;
+				margin-left : -15px ;
+				font-size: @font-size-p ;
+			}
 
 		button
 		{
