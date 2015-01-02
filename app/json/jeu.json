@@ -1,0 +1,98 @@
+{
+	"grille" : {
+		"largeur" : 17,
+		"hauteur" : 12,
+		"mots_verticaux" : [
+			{
+				"origine" : {
+					"x" : 4,
+					"y" : 1
+				},
+				"mot" : "chien",
+				"description" : {
+					"type" : "text" ,
+					"contenu" : "Mammifère très fidèle, joueur, attendrissant mais toujours sur ses gardes pour réagir à chaque situation."
+				}
+			},
+			{
+				"origine" : {
+					"x" : 6,
+					"y" : 1
+				},
+				"mot" : "harrypotter",
+				"description" : {
+					"type" : "text" ,
+					"contenu" : "Saga composée de 7 romans nous laissant rêver et imager un monde merveilleux et rempli de magie."
+				}
+			},
+			{
+				"origine" : {
+					"x" : 14,
+					"y" : 2
+				},
+				"mot" : "raclette",
+				"description" : {
+					"type" : "text" ,
+					"contenu" : "Plat d'origine suisse, à consommer en famille ou avec des amis. Fondant quand il est chaud."
+				}
+			},
+			{
+				"origine" : {
+					"x" : 17,
+					"y" : 5
+				},
+				"mot" : "starwars",
+				"description" : {
+					"type" : "text" ,
+					"contenu" : "Saga ayant révolutionné les effets spéciaux, et aux musiques et répliques cultes."
+				}
+			}
+		],
+		"mots_horizontaux" : [
+			{
+				"origine" : {
+					"x" : 4,
+					"y" : 2
+				},
+				"mot" : "heartofcourage",
+				"description" : {
+					"type" : "text" ,
+					"contenu" : "Musique épique, composée par Two Steps From Hell, qui nous fait vibrer tant par son rythme que sa mélodie."
+				}
+			},
+			{
+				"origine" : {
+					"x" : 1,
+					"y" : 5
+				},
+				"mot" : "johndykstra",
+				"description" : {
+					"type" : "text" ,
+					"contenu" : "Pionnier dans la révolution des effets spéciaux numériques et fondateur de Industrial Light & Magic."
+				}
+			},
+			{
+				"origine" : {
+					"x" : 13,
+					"y" : 6
+				},
+				"mot" : "kemet",
+				"description" : {
+					"type" : "text" ,
+					"contenu" : "Jeu de société liant affrontement et stratégie où la chance n'a pas sa place. Edité par Matagot, le jeu nous plonge dans la mythologie égyptienne."
+				}
+			},
+			{
+				"origine" : {
+					"x" : 3,
+					"y" : 9
+				},
+				"mot" : "photomontage",
+				"description" : {
+					"type" : "text" ,
+					"contenu" : "Art liant photographie et collage. Son évolution numérique permet de repousser les limites de l'imagination."
+				}
+			}
+		]
+	}
+}

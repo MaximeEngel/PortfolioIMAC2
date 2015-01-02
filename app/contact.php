@@ -22,7 +22,7 @@
         $subject = "Portfolio: Message de $nomprenom";
 
         // Build the email content.
-        $email_content = "Name: $nomprenom\n";
+        $email_content = "Nom: $nomprenom\n";
         $email_content .= "Email: $email\n\n";
         $email_content .= "Message:\n$message\n";
 
@@ -33,11 +33,11 @@
         if (mail($recipient, $subject, $email_content, $email_headers)) {
             // Set a 200 (okay) response code.
             // http_response_code(200);
-            echo "Je vous remervie pour votre message !";
+            echo "Je vous remercie de votre message !";
         } else {
             // Set a 500 (internal server error) response code.
             // http_response_code(500);
-            echo "Oops! Un problème est survenu, merci d'envoyer un message à <a data-hover='maximeengel@gmail.com' href='mailto:maximeengel@gmail.com' class='btn-noirBlanc'>maximeengel@gmail.com</a>.";
+            echo "Oups! Un problème est survenu, merci d'envoyer un message à <a data-hover='maximeengel@gmail.com' href='mailto:maximeengel@gmail.com' class='btn-noirBlanc'>maximeengel@gmail.com</a>.";
         }
 
     } else {

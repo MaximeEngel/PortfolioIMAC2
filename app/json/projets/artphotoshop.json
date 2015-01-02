@@ -1,0 +1,15 @@
+{
+	"titre" : "Violence",
+	"description" : {		
+		"annee" : 2012,		
+		"contexte" : "Infographie DUT SRC",
+		"techno" : "Photoshop",
+		"details" : "<p><span class='jaune'>Détails : </span>L'objectif était de réaliser une illustration sur la violence en s'inspirant du style d'un artiste anonyme. Nous avions le droit seulement au rouge, noir et blanc. Cette image n'est pas un dessin mais le fruit d'un travail de retouche de photos (surcontrastées et nombreux coups de pinceaux).</p>"
+	},
+	"slider" : [
+		{
+			"type" : "img",
+			"src" : "projets/artphotoshop/violence.jpg"
+		}
+	]
+}

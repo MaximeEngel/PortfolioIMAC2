@@ -155,3 +155,40 @@ BOUNCE
     top: -7px;
   } 
 }
+
+/*******
+* STAR
+*******/
+
+@keyframes star {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  45% {
+    transform: scale3d(1.08, 1.08, 1.08);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes star {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+
+  45% {
+    -webkit-transform: scale3d(1.08, 1.08, 1.08);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+}
+
+.star {
+  animation-name: star;
+  -webkit-animation-name: star;
+}

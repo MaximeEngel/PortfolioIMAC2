@@ -1,7 +1,5 @@
 #motCroise {
-  text-align: center;
-  margin-top: 7%;
-  margin-bottom: 7%; 
+  text-align: center; 
 }
 
 #motCroiseGrille {
@@ -25,24 +23,24 @@
   margin: 0 auto; 
 }
 
+#motCroiseDescription
+{
+  margin-bottom: 1% ;
+  position: relative;
+}
 
-#motCroiseLeft {
-  margin-top: 5px;
-  vertical-align: top;
-  text-align: left;
-  width: 100%;
-   @media @min-md-media
+#motsVerticaux, #motsHorizontaux
+{
+  width: 100% ;  
+  display : inline-block;
+  @media @min-md-media
   {
-    width: 36%;
+    vertical-align: top ;
+    width: 50%;
   }
-  min-width: 300px;
-  margin: 0 auto;
-  margin-right: 2%;
-  display: inline-block; 
 }
 
 .caseGrille {
-
   box-sizing: content-box;
   border: solid @blanc 0px;
   color: @blanc;

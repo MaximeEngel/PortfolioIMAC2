@@ -1,0 +1,16 @@
+{
+	"titre" : "La boucle du temps",
+	"description" : {		
+		"annee" : "2011/2012",		
+		"contexte" : "Personnel",
+		"techno" : "After Effects, Premiere Pro",
+		"details" : "<p><span class='jaune'>Détails : </span>L'objectif du projet était de découvrir et de me former au logiciel Adobe After Effects en autodidacte. En 2011 je n'avais aucune sensibilisation en audiovisuel (scénario, cadrage, découpage filmique...) et en effets spéciaux. Il est clair qu'aujourd'hui, je ferais ce film d'une toute autre manière. Cependant j'ai adoré travailler sur le compositing, la rotoscopie, l'animation. Et j'ai apprécié notamment l'utilisation des particules. La génération des particules m'intéresserait beaucoup en tant que développeur.</p>"
+	},
+	"videos" : [
+		{
+			"type":"youtube",
+			"src" : "<iframe width='320' height='240' src='//www.youtube.com/embed/OX2-vxhKUyk' frameborder='0' allowfullscreen></iframe>"
+		}
+	]
+}
+

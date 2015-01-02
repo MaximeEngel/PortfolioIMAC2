@@ -1,0 +1,15 @@
+{
+	"titre" : "Emotion",
+	"description" : {		
+		"annee" : 2013,		
+		"contexte" : "Arts appliqués IMAC1",
+		"techno" : "Photoshop",
+		"details" : "<p><span class='jaune'>Détails : </span>Réalisation d'un montage photo inspiré par le visionnage de la <a href='https://www.youtube.com/watch?v=OS0Tg0IjCp4' class='btn-jauneBlanc' data-hover='vidéo'>vidéo</a> des retrouvailles de Marina Abramović et Ulay.</p>"
+	},
+	"slider" : [
+		{
+			"type" : "img",
+			"src" : "projets/emotion/monochrome.jpg"
+		}
+	]
+}

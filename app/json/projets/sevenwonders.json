@@ -1,0 +1,15 @@
+{
+	"titre" : "Motion Design",
+	"description" : {		
+		"annee" : 2013,		
+		"contexte" : "Cour After Effects IMAC1",
+		"techno" : "After Effects, Photoshop",
+		"details" : "<p><span class='jaune'>Détails : </span>L'objectif du projet était de réaliser un spot de 30 secondes pour mettre en avant un produit. J'ai choisi le jeu de société 7 Wonders.</p><p>La première étape du travail a été de scanner les éléments du jeu : cartes, jetons, pièces... Puis les éléments ont été découpés avec Photoshop afin d'être intégrés dans la composition After Effects. Je les ai ensuite animés et y ai ajouté divers effets par compositing. J'ai créé mon propre script pour animer les cartes à la 18<sup>ème</sup> seconde de la vidéo. La programmation relative aux effets spéciaux est un domaine qui me plaît particulièrement.</p>"
+	},
+	"videos" : [
+		{
+			"type":"youtube",
+			"src" : "<iframe width='320' height='240' src='//www.youtube.com/embed/yuxOLk3Rk2g' frameborder='0' allowfullscreen></iframe>"
+		}
+	]
+}

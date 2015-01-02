@@ -1,0 +1,27 @@
+{
+	"titre" : "uPix",
+	"description" : {		
+		"annee" : "2012/2013",		
+		"contexte" : "Projet tutoré DUT SRC",
+		"techno" : "cakePHP, jQuery, canvas",
+		"details" : "<p><span class='jaune'>Détails : </span>En fin de première année, j’ai proposé comme sujet de projet tutoré l’adaptation du jeu 'Dessinez c’est gagné' sous forme de site internet où les dessins seraient réalisés en pixel-art. Il a été retenu et j’ai pu travailler dessus toute l’année avec trois autres camarades. <a href='http://maxime-engel.fr/Portfolio/uPix/' class='btn-jauneBlanc' data-hover='Essayez-le !'>Essayez-le !</a> Vous pouvez utiliser l'identifiant 'jury1' et le mot de passe 'juryuPix' pour jouer sans vous inscrire.</p><p>Il y a deux modes de jeux. Le principal est le mode multijoueurs, où tour à tour un joueur doit faire deviner un mot généré au hasard aux autres. La partie solitaire permet de dessiner l’oeuvre de son choix sans aucun délai. Les dessins peuvent alors être mis en ligne dans la galerie afin que les visiteurs puissent voter. Les deux modes vont permettre de gagner des points pour monter dans le classement général, mais aussi des points d’achat afin de débloquer de nouvelles couleurs.</p><p>J'ai travaillé principalement sur toute la partie serveur du site. Je me suis auto-formé à cakePHP et au modèle MVC. J'ai aussi créé l'effet parallaxe visible en arrière plan et secondé mes camarades côté client.</p>"
+	},
+	"slider" : [
+		{
+			"type" : "img",
+			"src" : "projets/upix/salle.jpg"
+		},
+		{
+			"type" : "img",
+			"src" : "projets/upix/sonic.jpg"
+		},
+		{
+			"type" : "img",
+			"src" : "projets/upix/galerie.jpg"
+		},
+		{
+			"type" : "img",
+			"src" : "projets/upix/magasin.jpg"
+		}
+	]
+}

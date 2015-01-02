@@ -14,7 +14,7 @@ body
 
 html, body, .full-height
 {
-	height: 100%;
+	min-height: 100%;
 }
 
 .bande
@@ -27,6 +27,8 @@ html, body, .full-height
 
 p {	
 	text-indent: @font-size-p ;
+	padding: 0px ;
+	margin : 1% ;
 	
 	@media @lg-media
 	{
@@ -73,9 +75,9 @@ h1 {
 
 h2
 {
-	font-size: @font-size-p * 1.4 ;
+	font-size: @font-size-p * 1.2 ;
 	@media @min-md-media {
-		font-size: @font-size-p * 1.8 ;
+		font-size: @font-size-p * 1.5 ;
 	}
 }
 
@@ -83,7 +85,7 @@ h3
 {
 	font-size: @font-size-p  ;
 	@media @min-md-media {
-		font-size: @font-size-p * 1.3 ;
+		font-size: @font-size-p * 1.2 ;
 	}
 }
 
@@ -117,8 +119,13 @@ a {
 	.btnBottomBorder(@jaune, @noir) ;
 }
 
+.btn-jauneBlanc {
+	font-weight: bold;
+	.btnBottomBorder(@jaune, @blanc) ;
+}
+
 .btn-noirJaune {
-	.btnBottomBorder(@noir, @jaune) ;
+	.btn(@noir, @jaune) ;
 }
 
 .btnBig
@@ -188,4 +195,54 @@ LOADER
 	margin-left : -24px ;
 	margin-top: -24px;
 	display: none;
+}
+
+/************
+VIDEO RESPONSIVE
+************/
+
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 30px; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+	height: auto; 
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+/************
+OTHER
+************/
+
+.noindent
+{
+	text-indent: 0px ;
+}
+
+.borderStyle
+{
+	width: 2px ;
+	height: 100% ;
+	position: absolute;
+	background-color: @jaune ;
+	left : -60px ;
+}
+
+img.responsive {
+	width : auto ;
+	max-width : 100% ;
+	height: auto ;
+}
+
+.prevNext a {
+	margin: 0px 3% ;
 }

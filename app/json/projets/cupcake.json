@@ -1,0 +1,15 @@
+{
+	"titre" : "Beauté Gourmande",
+	"description" : {		
+		"annee" : 2013,		
+		"contexte" : "Audiovisuel IMAC1",
+		"techno" : "Premiere Pro, After Effects",
+		"details" : "<p><span class='jaune'>Détails : </span>Réalisation d'un court métrage de 3 minutes sur le thème de la beauté. Notre groupe a choisi de mettre en avant l'art culinaire. J'ai participé à toutes les étapes du processus de création.</p>"
+	},
+	"videos" : [
+		{
+			"type":"youtube",
+			"src" : "<iframe width='320' height='240' src='//www.youtube.com/embed/07ph_5rfHME?list=UUW6jl8Zfd8WEl43WAbBq_xg' frameborder='0' allowfullscreen></iframe>"
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"titre" : "Cuisine 3D",
+	"description" : {		
+		"annee" : 2013,		
+		"contexte" : "Modélisation 3D DUT SRC",
+		"techno" : "Blender",
+		"details" : "<p><span class='jaune'>Détails : </span>L'objectif était de modéliser une cuisine en 3D en se rapprochant au maximum de la photo d'origine.</p>"
+	},
+	"slider" : [
+		{
+			"type" : "img",
+			"src" : "projets/cuisineblender/blenderCuisine.png"
+		}
+	]
+}

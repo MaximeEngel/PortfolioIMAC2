@@ -1,6 +1,6 @@
 #projet
 {
-	background-color: @blanc;
+	background-color: @noir;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -15,58 +15,122 @@
 
 	#accroche
 	{
-		background-color: @noir ;
+		background-color: @jaune ;
 	}
 
 	#contenuProjet
 	{
 		position: relative;
 	}
+	
+	#infos{
 
-	#media, #description {
-		width : 100%;
-		@media @min-md-media
-		{
-			position: absolute;
-			top: 0px ;
-		}
-		display: inline-block;
-	}
-
-	@media @min-md-media
-	{
-		#description
-		{			
-			width : 40% ;
-			right : 0px
-		}
-		#media
-		{			
-			width : 60% ;
-			left : 0px ;
-
-			&::after {
-				content:""; 
-				background: @noir; 
-				position: absolute; 
-				bottom: 25%; 
-				right: 0; 
-				height: 50%; 
-				width: 1px;
+		.cachable {					
+			@media @lg-media
+			{
+				margin : 0% 5%  ;
+			}
+			@media @md-media
+			{
+				margin : 0% 3%  ;
+			}
+			@media @sm-media
+			{
+				margin : 0% 1%  ;
+			}
+			@media @xs-media
+			{
+				text-align: center;
 			}
 		}
-	}
-	#media {
-		img {
-			width : 500px ;
+
+		a {
+			margin-left: 3% ;
 		}
-		background-color: green ;
+	}
+
+		#videos, #sliderWrap, #detail, .prevNext {
+			position: relative;
+			
+			display: inline-block;
+			width: 99% ;
+			@media @lg-media {
+				width : 70% ;
+			}
+			@media @md-media {
+				width: 80% ;
+			}			
+		}
+
+
+
+	#media {
+
+		.go-previous, .go-next
+		{
+			width: 46px;
+			height: 97px;
+			position: absolute;
+			bottom: -97px ;
+			@media @min-md-media {
+				bottom: inherit;
+				top : 50% ;				
+				margin-top: -48.5px ;
+			}
+		}
+
+		.go-previous {
+			background-image: url("../img/style/prevArrow.png");
+			left : 20% ;			
+			@media @min-md-media {
+				left : -50px ;
+			}
+		}
+
+		.go-next {
+			background-image: url("../img/style/nextArrow.png");
+			right : 20% ;
+			@media @min-md-media {
+				right : -50px; ;
+			}
+		}
 
 	}
 
-	#description
+	#infos, #video
+	{		
+		margin-bottom: 2% ;
+	}
+
+	 #sliderWrap {
+	 	margin-bottom: 103px ;
+	 	@media @min-md-media {
+	 		margin-bottom: 2% ;
+	 	}
+	}
+
+	.prevNext
 	{
-		background-color: orange ;
+		@media @xs-media {
+			height: 102px ;
+		}
+		a {
+			display: inline-block;
+		}
 	}
+
+	#accueil
+	{
+		width : 64px;
+		height: 64px ;
+		position: relative;
+		top : 15px ;
+		background : url("../img/style/house.png") ;
+
+		&:hover {
+			background-image : url("../img/style/house_hover.png") ;
+		}
+	}
+
 
 }

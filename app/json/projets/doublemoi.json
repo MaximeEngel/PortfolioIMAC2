@@ -1,19 +1,27 @@
 {
 	"titre" : "Double Moi",
-	"accroche" : "lorem ipsum fjsdj sdlkfj ldksfj sdflk jsdlfk jsdlfk jsdlfk jsd flkj dslkf ",
 	"description" : {		
+		"annee" : 2014,		
 		"contexte" : "Personnel",
-		"techno" : "C, OpenGl"
+		"techno" : "Java, LibGDX",
+		"details" : "<p><span class='jaune'>Détails : </span>Double Moi est un jeu Android que j'ai créé seul et à mon initiative. C'est un produit finalisé et téléchargeable gratuitement sur le playstore. <a href='https://play.google.com/store/apps/details?id=fr.maximeengel.doublemoi' class='btn-jauneBlanc' data-hover='Essayez-le !'>Essayez-le !</a></p><p>Le Docteur Balloun est un mignon petit extraterrestre. Lors d’une expérience scientifique qui a mal tourné, il s’est dédoublé ! Aidez-le à retrouver son état normal en le faisant fusionner dans la machine prévue à cet effet.</p><p>Double Moi est un jeu de réflexion et d’adresse novateur. Nous y contrôlons simultanément deux personnages. Lorsque l’un se déplace, l’autre le fait tout autant mais dans le sens contraire !</p>"
 	},
-	"medias" : [
+	"slider" : [
 		{
 			"type" : "img",
-			"src" : "style/downArrow.png"
+			"src" : "projets/doublemoi/jeu1.jpg"
 		},
 		{
 			"type" : "img",
-			"src" : "style/loadAjax.gif"
+			"src" : "projets/doublemoi/jeu2.jpg"
+		},
+		{
+			"type" : "img",
+			"src" : "projets/doublemoi/jeu3.jpg"
+		},
+		{
+			"type" : "img",
+			"src" : "projets/doublemoi/menu.jpg"
 		}
-
 	]
 }

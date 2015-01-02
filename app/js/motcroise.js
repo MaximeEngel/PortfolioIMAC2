@@ -4,7 +4,7 @@ var grilleProposition = new Array() ;
 var caseSelectedId = null ;
 var taillePolice = 15 ;
 var nomGrille = "grille1" ;
-var defaultGrille = "longmetrage";
+var defaultGrille = "jeu";
 var mobile = 0 ;
 
 $(document).ready(function() {
@@ -185,12 +185,12 @@ function drawGrille(grille) {
 	$("#motCroiseGrille").html('') ;
 	// $("#motCroiseGrille").append("<input id='clavierVirtuel' type='text'>") ;
 	var tailleBorder = 1 ;
-	var largeur = $(window).width() ;
+	var largeur = $("#motCroise").width() ;
 	if (largeur > 992)
 	{
 		largeur /= 2 ;
 	}
-	var hauteur = $("#motCroiseGrille").height() ;
+	// var hauteur = $("#motCroiseGrille").height() ;
 	var nbCaseLargeur = grille[0].length ;
 	var nbCaseHauteur = grille.length ;
 	var tailleCaseLargeur = (largeur-((nbCaseLargeur+1)*tailleBorder))/nbCaseLargeur ;

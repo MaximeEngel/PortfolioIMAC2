@@ -92,15 +92,15 @@ grunt.initConfig({
   },
   concat: {
     options: {
-      separator: ';',
+      separator: ';\n'
     },
     dist: {
-      src: ['app/bower_components/**/*.min.js', 'app/vendor/*.min.js'],
+      src: ['app/bower_components/jquery/dist/*.min.js', 'app/bower_components/**/*.min.js', 'app/vendor/*.min.js'],
       dest: 'dist/js/lib.min.js'
     },
     dev: {
       files: {
-        '.tmp/js/lib.min.js' : ['app/bower_components/**/*.min.js', 'app/vendor/*.min.js'],
+        '.tmp/js/lib.min.js' : ['app/bower_components/jquery/dist/*.min.js', 'app/bower_components/**/*.min.js', 'app/vendor/*.min.js'],
         '.tmp/js/app.min.js': ['app/js/*.js']
       }
     }

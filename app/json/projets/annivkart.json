@@ -1,0 +1,14 @@
+{
+	"titre" : "Invitation",
+	"description" : {		
+		"annee" : 2012,		
+		"contexte" : "Personnel",
+		"techno" : "Photoshop"
+	},
+	"slider" : [
+		{
+			"type" : "img",
+			"src" : "projets/annivkart/invitation20ans.jpg"
+		}
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"titre" : "Double Moi",
+	"description" : {		
+		"annee" : 2013,		
+		"contexte" : "Stage DUT SRC",
+		"techno" : "cakePHP, jQuery, HTML, CSS",
+		"details" : "<p><span class='jaune'>Détails : </span>Scrap Palace est un site e-commerce vendant du matériel de scrapbooking. Le challenge a été de développer ce site entièrement seul en 10 semaines, le tout en se basant sur des technologies de bases et avec le framework cakePHP. L'objectif a été de progresser au maximum en développement web. <a href='http://www.scrappalace.fr/' class='btn-jauneBlanc' data-hover='Visitez-le !'>Visitez-le !</a></p><p>Du côté de l'administration, j'ai créé de nombreuses fonctionnalités. Un exemple : l'ajout de produit permet entre autre de charger les images sur les serveurs et de les recadrer via l'interface du site. D'autres exemples : ajout de bons de réductions, envoi de mails à tous les clients, obtention de statistiques sur les commandes et produits vendus...</p>"
+	},
+	"slider" : [
+		{
+			"type" : "img",
+			"src" : "projets/scrappalace/commande.jpg"
+		},
+		{
+			"type" : "img",
+			"src" : "projets/scrappalace/produits.jpg"
+		},
+		{
+			"type" : "img",
+			"src" : "projets/scrappalace/ajout.jpg"
+		},
+		{
+			"type" : "img",
+			"src" : "projets/scrappalace/mail.jpg"
+		}
+	]
+}

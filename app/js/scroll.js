@@ -14,7 +14,7 @@ $(document).ready(function() {
     // Smooth scroll on click on
     $(".scrollTo").on('click', function(evt) {
         evt.preventDefault();
-        $("html, body").animate({scrollTop : $($(this).attr("href")).offset().top - 50}, 500, 'swing');
+        $("html, body").animate({scrollTop : $($(this).attr("href")).offset().top - 55}, 500, 'swing');
     }) ;
 
     // Fade when scroll to good position
