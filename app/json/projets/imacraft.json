@@ -2,7 +2,7 @@
 	"titre" : "Imacraft",
 	"description" : {
 		"annee" : 2014,
-		"details" : "<p><span class='jaune'>Détails : </span>Le but du projet était de réaliser une mini version du célèbre Minecraft. Je me suis occupé de mettre en place le moteur graphique (rendu instancié, texture, lumière...) ainsi que le squelette du moteur de jeu que mes camarades ont ensuite complété. <a href='#' class='btn-jauneBlanc' data-hover='Essayez-le !'>Essayez-le !</a> (sous linux).</p>",
+		"details" : "<p><span class='jaune'>Détails : </span>Le but du projet était de réaliser une mini version du célèbre Minecraft. Je me suis occupé de mettre en place le moteur graphique (rendu instancié, texture, lumière...) ainsi que le squelette du moteur de jeu que mes camarades ont ensuite complété.</p>",
 		"contexte" : "OpengGl 3+ IMAC2",
 		"techno" : "C++, OpenGl 3+"
 	},

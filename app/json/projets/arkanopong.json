@@ -2,7 +2,7 @@
 	"titre" : "Arkanopong",
 	"description" : {
 		"annee" : 2013,
-		"details" : "<p><span class='jaune'>Détails : </span>L'objectif du projet était de réaliser un mixte entre le pong et le casse-brique. Ma tâche a été principalement le développement. Le jeu permet de jouer seul contre l'ordinateur ou à deux. Il y a des pièges et des bonus. Il est très facile de rajouter de nouveaux niveaux, ainsi que des thèmes graphiques. <a href='https://play.google.com/store/apps/details?id=fr.maximeengel.doublemoi' class='btn-jauneBlanc' data-hover='Essayez-le'>Essayez-le</a> (sous linux).</p>",
+		"details" : "<p><span class='jaune'>Détails : </span>L'objectif du projet était de réaliser un mixte entre le pong et le casse-brique. Ma tâche a été principalement le développement. Le jeu permet de jouer seul contre l'ordinateur ou à deux. Il y a des pièges et des bonus. Il est très facile de rajouter de nouveaux niveaux, ainsi que des thèmes graphiques. <a href='download/arkanopong.zip' class='btn-jauneBlanc' data-hover='Essayez-le'>Essayez-le</a> (sous linux).</p>",
 		"contexte" : "OpengGl 2 IMAC1",
 		"techno" : "C, OpenGl 2"
 	},
